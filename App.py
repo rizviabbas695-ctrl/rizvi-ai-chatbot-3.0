@@ -65,7 +65,7 @@ embeddings = load_embeddings()
 uploaded_file = st.file_uploader("Upload your PDF here 👇", type="pdf")
 
 if uploaded_file is None:
-    st.info("Shuru karne ke liye ek PDF upload karo.")
+    st.info("Upload Your file to start chatting.")
     st.stop()
 
 if "db" not in st.session_state or st.session_state.get("file_name") != uploaded_file.name:
