@@ -62,7 +62,7 @@ Question: {question}"""
 llm = load_llm()
 embeddings = load_embeddings()
 
-uploaded_file = st.file_uploader("Apni PDF yahan upload karo", type="pdf")
+uploaded_file = st.file_uploader("Upload your PDF here 👇", type="pdf")
 
 if uploaded_file is None:
     st.info("Shuru karne ke liye ek PDF upload karo.")
