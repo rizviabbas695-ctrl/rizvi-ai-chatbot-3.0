@@ -13,7 +13,7 @@ os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
 
 st.set_page_config(page_title=BOT_NAME, page_icon="🤖")
 st.title("🤖 " + BOT_NAME)
-st.caption("Upload your pdf here and ask your questions")
+st.caption("Upload your pdf here and ask your questions😊")
 
 
 @st.cache_resource
