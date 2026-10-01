@@ -7,13 +7,13 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_groq import ChatGroq
 
-BOT_NAME = "Digital Marketing Assistant"
+BOT_NAME = "rizvi pdf AI"
 
 os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
 
 st.set_page_config(page_title=BOT_NAME, page_icon="🤖")
 st.title("🤖 " + BOT_NAME)
-st.caption("Apni PDF upload karo, phir Hinglish, English ya kisi bhi language mein poochho")
+st.caption("Upload your pdf here and ask your questions")
 
 
 @st.cache_resource
