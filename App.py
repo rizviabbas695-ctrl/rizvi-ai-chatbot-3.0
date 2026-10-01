@@ -80,7 +80,7 @@ for m in st.session_state.get("messages", []):
     with st.chat_message(m["role"]):
         st.write(m["content"])
 
-q = st.chat_input("Apna sawaal likho...")
+q = st.chat_input("Ask Your Questions here")
 if q:
     st.session_state.messages.append({"role": "user", "content": q})
     with st.chat_message("user"):
